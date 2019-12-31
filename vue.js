@@ -6,9 +6,13 @@ function randomString(length) {
   if (length === 0) {
     return 0
   }
-  const first = randomDigit(1);
-  const rest = [...Array(length - 1)].map(num => randomDigit());
-  return [first, ...rest].join('').trim();
+  //const first = randomDigit(1);
+  //const rest = [...Array(length - 1)].map(num => randomDigit());
+  //return [first, ...rest].join('').trim();
+  var things = ['Rock', 'Paper', 'Scissor'];
+  var thing = things[Math.floor(Math.random()*things.length)];
+  return thing;
+  //alert('The computer chose:' + thing);
 }
 
 new Vue({
@@ -26,3 +30,4 @@ new Vue({
     this.generate()
   }
 })
+
