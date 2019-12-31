@@ -1,5 +1,5 @@
-function randomDigit(min = 0) {
-  return Math.floor((Math.random() * Math.floor(9)) + min);
+function textToArray(){
+ 
 }
 
 function randomString() {
@@ -7,9 +7,11 @@ function randomString() {
   //const first = randomDigit(1);
   //const rest = [...Array(length - 1)].map(num => randomDigit());
   //return [first, ...rest].join('').trim();
-  var things = ['Glasögonorm', 'Pappersplan', 'Enhjuling'];
+  var things = ['banana peel', 'church', 'sleep', 'money', 'kite', 'sailboat', 'popsicle', 'brain', 'birthday', 'cakeskirtknee', 'saxophone', 'crater', 'cage'];
   var thing = things[Math.floor(Math.random()*things.length)];
   return thing;
+  
+  
   //alert('The computer chose:' + thing);
 }
 
